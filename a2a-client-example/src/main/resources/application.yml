@@ -1,0 +1,17 @@
+server:
+  port: 18081
+
+spring:
+  application:
+    name: a2a-client-example
+  ai:
+    alibaba:
+      a2a:
+        nacos:
+          discovery:
+            enabled: true
+          server-addr: ${NACOS_ADDRESS:localhost:8848}
+          username: ${NACOS_USERNAME:nacos}
+          password: ${NACOS_PASSWORD:nacos}
+    dashscope:
+      api-key: sk-c172328dd71e48f9a0b96e6892291c70

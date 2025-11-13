@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>a2a-example</groupId>
+    <artifactId>a2a-client-example</artifactId>
+    <version>1.0.0</version>
+
+    <name>A2A Client Example</name>
+    <description>A2A Client Example</description>
+
+    <properties>
+        <spring.ai.alibaba.version>1.0.0.4</spring.ai.alibaba.version>
+        <io.a2a.sdk.version>0.2.5</io.a2a.sdk.version>
+        <spring-boot.version>3.5.7</spring-boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+            <version>${spring.ai.alibaba.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-a2a-client</artifactId>
+            <version>${spring.ai.alibaba.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-a2a-registry</artifactId>
+            <version>${spring.ai.alibaba.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.a2asdk</groupId>
+            <artifactId>a2a-java-sdk-client</artifactId>
+            <version>${io.a2a.sdk.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
